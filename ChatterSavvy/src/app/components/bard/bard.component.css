@@ -1,0 +1,26 @@
+.questionanswer-block{
+    margin: 30px;
+    border-bottom: 1px solid;
+}
+.answer{
+    margin: 10px 0 20px 0;
+    line-height: normal;
+}
+.question{
+    font: bold;
+}
+.footer{
+    margin: 0 25px 0 25px;
+}
+.cardbody{
+    padding: 0;
+}
+.card-header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(0, 149, 255, 0.48);
+}
+.card{
+    font-size: 20px;
+}

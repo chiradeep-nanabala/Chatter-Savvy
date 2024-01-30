@@ -1,0 +1,15 @@
+<nb-layout>
+  <nb-layout-header><div class="header">Chatter Savvy</div></nb-layout-header>
+
+  <nb-layout-column class="col colored-column-warning">
+    <app-chatgpt [nbSpinner]="loadingGPT" nbSpinnerSize="large" nbSpinnerStatus="warning"></app-chatgpt>
+  </nb-layout-column>
+  <nb-layout-column class="col colored-column-danger">
+    <app-bard [nbSpinner]="loadingBard" nbSpinnerSize="large" nbSpinnerStatus="warning"></app-bard>
+  </nb-layout-column>
+
+  <nb-layout-footer>
+    <textarea class="prompt" nbInput fullWidth placeholder="Enter Prompt" [(ngModel)]="inputQuery"></textarea> <br />
+    <button class="submit" nbButton outline size="small" status="success" (click)="submitQuery()">Submit</button>
+  </nb-layout-footer>
+</nb-layout>

@@ -1,0 +1,22 @@
+.prompt{
+    margin-bottom: 10px;
+    font-size: 20px !important;
+}
+.submit{
+    height: max-content;
+    margin: 15px;
+}
+:host ::ng-deep nb-layout-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.col{
+    padding: 15px !important;
+}
+.header{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+}

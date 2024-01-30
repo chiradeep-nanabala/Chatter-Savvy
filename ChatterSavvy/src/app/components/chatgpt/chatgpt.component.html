@@ -1,0 +1,9 @@
+<nb-card class="card" status="color-success-700">
+    <nb-card-header class="card-header">GPT-3.5</nb-card-header>
+    <nb-card-body class="cardbody">
+        <div class="questionanswer-block" *ngFor="let item of questionAnswer">
+            <div class="question">Q. {{item.question}}</div>
+            <div class="answer">A. {{item.answer}}</div>
+        </div>
+    </nb-card-body>
+  </nb-card>

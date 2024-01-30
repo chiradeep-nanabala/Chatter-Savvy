@@ -30,7 +30,8 @@ class ChatGPTApi(View):
         
         data = json.loads(request.body)
         input_text = data.get('input_text', '')
-        bearer_token = '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'
+        # Place your token
+        bearer_token = ''
         api_url = 'https://api.openai.com/v1/chat/completions'
 
         payload = {
@@ -48,7 +49,8 @@ class ChatGPTApi(View):
 @method_decorator(csrf_exempt, name='dispatch')
 class BardApi(View):
     def post(self, request, *args, **kwargs):
-        os.environ['_BARD_API_KEY'] = 'g.a000fwh1uepJ6vOcDrg9C6kC9njxNkOzOunNS2EzpuBvs77tTql3nWGFZwJN8nRCcMJ0YmIvdAACgYKAVsSAQASFQHGX2Mi1MfQO7o5RrdoFqaodgOl9RoVAUF8yKpchpdiHf4fhW0r4fn7QgKJ0076'
+        # Place your token
+        os.environ['_BARD_API_KEY'] = ''
         data = json.loads(request.body)
         input_text = data.get('input_text', '')
         response_data = Bard().get_answer(input_text)['content']
